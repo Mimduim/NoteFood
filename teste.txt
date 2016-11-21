@@ -1,0 +1,11 @@
+
+
+$qryUsuarios = mysqli_query($db, 'SELECT * FROM USUARIO');
+while ($row = mysqli_fetch_array($qryUsuarios)){
+	?>
+	<div style="border: 1px solid red; padding: 10px;">
+	<?php echo $row['Nome_Usuario']; ?>
+</div>
+<?php
+}
+?>
